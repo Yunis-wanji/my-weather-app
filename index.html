@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello Git</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/783c514855.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="City"
+          autocomplete="off"
+          id="search-text-input"
+        />
+        <input type="submit" value="search" />
+
+        <!-- <i class="fas fa-search"></i> -->
+    </form>
+      <div class="cityname">
+        <h1 id="city"> Limuru </h1>
+        <div>
+          <p>
+            Wed, 14 August 2021 8:03am
+          </p>
+        </div>
+      </div>
+      <div class="weather-icon">
+        <i class="fas fa-cloud"></i>
+        <h2 id="describe" class="description">
+            Sunny
+        </h2>
+      </div>
+      <section class="temp">
+        <h1>Temp: <span id="temp"></span>°C</h1>
+        <span>
+          <h3 >Humidity: <span id="humid"></span>%</h3>
+        </span>
+        <span>
+            <h3> Windspeed: <span id="wind"></span>km/hr</h3>
+        </span>
+      </section>
+
+      <section class="footer">
+        <div class="row">
+          <div class="col-2">
+            <h3>Thur</h3>
+          </div>
+
+          <div class="col-2">
+            <h3>Fri</h3>
+          </div>
+          <div class="col-2">
+            <h3>Sat</h3>
+          </div>
+          <div class="col-2">
+            <h3>Sun</h3>
+          </div>
+          <div class="col-2">
+            <h3>Mon</h3>
+          </div>
+          <div class="col-2">
+            <h3>Tue</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>

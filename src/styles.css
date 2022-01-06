@@ -1,0 +1,30 @@
+body {
+    background: url(/images/image.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    color: whitesmoke;
+  }
+  form {
+    float: right;
+    margin-top: 3em;
+    margin-right: 20px;
+  }
+  .cityname {
+    text-align: center;
+    padding-top: 94px;
+  }
+  .temp {
+    text-align: center;
+  }
+  .weather-icon {
+    text-align: center;
+    font-size: 6em;
+    color: whitesmoke;
+  }
+  p {
+    font-size: 2em;
+  }
+  .footer {
+    margin-top: 2.5em;
+  }
+  
